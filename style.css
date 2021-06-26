@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  perspective: 1000px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  transform-style: preserve-3d;
+  width: 300px;
+  height: 480px;
+  border-radius: .7rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,.2), 0 0 50px rgba(0,0,0,.2);
+  padding: 1.2rem 1.5rem 1.5rem 1.5rem;
+  margin: .8rem;
+}
+.logo {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  width: 155px;
+  height: 155px;
+  background: linear-gradient(65deg, rgba(201,221,120,.7), rgb(224,68,61,.7));
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  
+}
+.circle.two {
+  background: linear-gradient(65deg, rgba(138,133,86,.7), rgb(81,76,84,.7));
+}
+.circle.three {
+  background: linear-gradient(65deg, rgba(139,141,147,.7), rgb(196,61,54,.7));
+}
+.circle.four {
+  background: linear-gradient(65deg, rgba(184,179,211,.7), rgb(1,223,239,.7));
+}
+.circle.five {
+  background: linear-gradient(65deg, rgba(176,178,177, .7), rgba(131,132,134,.7));
+}
+.circle.six {
+  background: linear-gradient(65deg, rgba(40,95,168, .7), rgba(235,24,123,.7));
+}
+.logo-img {
+  width: 195px;
+  z-index: 2;
+  transition: all .5s ease;
+}
+.description {
+  height: 62%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 20%;
+}
+.title {
+  font-size: 2rem;
+  color: #333;
+  transition: all .5s ease;
+}
+.descript-text {
+  font-size: 1rem;
+  color: #666;
+  transition: all .5s ease;
+}
+.size {
+    display: flex;
+    justify-content: space-evenly;
+    transition: all .5s ease;
+}
+.size button {
+  border: none;
+  outline: none;
+  background: none;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  padding: .4rem;
+  font-weight: bold;
+  font-size: .7rem;
+  border-radius: .3rem;
+  transition: .3s;
+}
+.purchase {
+      transition: all .5s ease;
+}
+.purchase-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: .7rem 0;
+  border-radius: 20px;
+  background: rgb(224,68,61);
+  color: white;
+  font-weight: bold;
+  font-size: .6rem;
+  transition: .3s;
+}
+.size button:active,
+.purchase-btn:active {
+  transform: scale(.9);
+}
+
+@media (max-width: 768px) {
+  body {
+    perspective: 2000px;
+  }
+}
